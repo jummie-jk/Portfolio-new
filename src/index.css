@@ -1,13 +1,39 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@100..900&family=Manrope:wght@200..800&display=swap');
+* {
+  box-sizing: border-box;
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+ }
+ :root {
+  /* --header-height: 3.5rem;
+  --first-color: hsl(28, 88%, 62%);
+  --title-color: hsl(0, 0%, 95%); */
+  --text-color: #FFFFFF;
+  --body-color: hsl(0, 0%, 0%);
+  --nav-text-color: #C7C7C7;
+  /* --body-font: "Manrope", sans-serif;
+  --second-font: "Dancing Script", cursive; */
+  /* --h2-font-size: 1.25rem;
+  --small-font-size: 0.813rem; */
+  /* --font-semi-bold: 600;
+  --z-tooltip: 10; */
+  /* --z-fixed: 100; */
+ }
+ 
+ body {
+  background-color: var(--body-color);
+  color: var(--text-color);
+  /* font-family: var(--body-font); */
+ }
+ 
+ ul {
+  list-style: none;
+ }
+ 
+ a {
+  text-decoration: none;
+ }
+ .rule{
+  border-color: #484848;
+  border-width: 0.2px; 
+ }

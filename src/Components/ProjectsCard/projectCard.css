@@ -1,0 +1,73 @@
+.card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.image-div{
+    width: 600px;
+    height: 600px;
+    background-color: #1A1A1A;
+}
+.text-div{
+    width: 600px;
+    height: 600px;
+    margin-top: 7rem;
+}
+.flex{
+    display: flex;
+    flex-direction: row;
+    
+}
+.flex a{
+    color: #D3E97A;
+    font-size: 16px;
+    font-family: "Manrope", sans-serif;
+   
+}
+.underline{
+    border-bottom: 1px solid #D3E97A;
+}
+.flex a p {
+    padding-right: 0.5rem;
+    padding-bottom: 0.2rem;
+}
+.div-link{
+    margin-top: 2rem;
+}
+.pad-left{
+    margin-left: 2rem;
+}
+.project-details{
+    color: #C7C7C7;
+    font-family: "Manrope", sans-serif;
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 2rem;
+}
+.project-title{
+    color: #fff;
+    font-family: "Manrope", sans-serif;
+    font-size: 32px;
+    line-height: 28px;
+    margin: 2rem 0;
+}
+.flex-btw{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.live-info{
+    font-family: "Manrope", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    padding-bottom: 1rem;
+}
+.flex-btw p {
+    font-family: "Manrope", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 1rem 0;
+    color: #C7C7C7;
+    
+}

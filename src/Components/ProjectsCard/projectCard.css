@@ -71,3 +71,11 @@
     color: #C7C7C7;
     
 }
+@media screen and (max-width: 900px) {
+    .card{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

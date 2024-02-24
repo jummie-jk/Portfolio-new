@@ -5,6 +5,7 @@ import { NavBar } from './Components/NavBar/navbar';
 function App() {
   return (
     <>
+     <NavBar/>
      <RoutePage />
     </>
     

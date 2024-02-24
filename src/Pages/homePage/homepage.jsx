@@ -10,7 +10,6 @@ import { ProjectCard } from "../../Components/ProjectsCard/projectsCard"
 export const HomePage = () => {
     return(
         <div>
-            <NavBar/>
            <section className="section">
              <div className="homepage-intro-div">
                 <div>

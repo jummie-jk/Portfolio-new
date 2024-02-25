@@ -3,6 +3,7 @@ import './projectCard.css'
 import arrow from "../../assets/arrow.png"
 import github from "../../assets/githubneww.png"
 
+
 export const ProjectCard = (props) => {
     return(
         <div className="all-cards">
@@ -21,7 +22,7 @@ export const ProjectCard = (props) => {
                      </div>
                      <hr className="rule" />
                      <div  className="flex-btw">
-                       <p>Tools/stacks</p>
+                       <p>Tools/stacks: </p>
                        <p>{props.stacks}</p>
                      </div>
                      <hr className="rule" />

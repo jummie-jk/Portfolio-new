@@ -1,0 +1,69 @@
+.input-field {
+    width: 600px;
+    padding: 10px;
+    border: 1px solid #484848;
+    border-radius: 5px;
+    font-size: 18px;
+    font-family: "Manrope", sans-serif;
+    outline: none;
+    background-color: #484848;
+    color: #fff;
+  }
+
+  form label{
+    display: block;
+    padding: 1rem 0;
+    font-size: 16px;
+    font-family: "Manrope", sans-serif;
+  }
+  .input-field::placeholder{
+    color: #f6ecec;
+    font-size: 16px;
+    font-family: "Manrope", sans-serif;
+  }
+  .contact-footer-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 48px;
+    font-weight: 500;
+    background-color: #D3E97A; 
+    color: #000; 
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: "Manrope", sans-serif;
+    transition: background-color 0.3s;
+    border-radius: 100px;
+    margin-top: 2rem;
+}
+@media screen and (max-width: 1000px) {
+    .input-field {
+        width: 500px;
+        padding: 10px;
+        font-size: 16px;
+        
+      }
+    
+}
+@media screen and (max-width: 700px) {
+    .input-field {
+        width: 400px;
+        padding: 10px;
+        font-size: 16px;
+        
+      }
+      form{
+        margin-top: 3rem;
+      }
+}
+@media screen and (max-width: 500px) {
+    .input-field {
+        width: 320px;
+        padding: 10px;
+        font-size: 16px;
+        
+      }
+
+}

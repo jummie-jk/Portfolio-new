@@ -7,9 +7,14 @@ function App() {
     <>
      <NavBar/>
      <RoutePage />
+     <div className='copyright'>
+      <p className='intro-mini'>© 2024 Ipoola Olajumoke</p>
+     </div>
+    
     </>
     
   );
 }
 
 export default App;
+

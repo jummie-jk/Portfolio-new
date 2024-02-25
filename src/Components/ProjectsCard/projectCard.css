@@ -34,13 +34,15 @@
 }
 .underline{
     border-bottom: 1px solid #D3E97A;
+    display: inline-block; 
+    position: relative;
 }
 .flex a p {
     padding-right: 0.5rem;
     padding-bottom: 0.2rem;
 }
 .div-link{
-    margin-top: 2rem;
+    margin-top: 2rem; 
 }
 .pad-left{
     margin-left: 2rem;

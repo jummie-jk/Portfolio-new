@@ -100,6 +100,8 @@
 }
 .underline{
     border-bottom: 1px solid #D3E97A;
+    display: inline-block;
+    position: relative;
 }
 .intro-mini span{
     color: #D3E97A;
@@ -110,6 +112,9 @@
     height: 32px;
     margin-right: 1rem;
     margin-top: 2rem;
+}
+.pb-1{
+    padding-bottom: 1rem;
 }
 
 

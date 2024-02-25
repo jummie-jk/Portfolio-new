@@ -10,7 +10,7 @@ export const ProjectsPage = () => {
            <section className="section">
             <div>
                 <p className="header-text">All projects</p>
-                <p className="intro-mini ">Here are some of the selected projects that showcase my passion for <br/> front-end development.</p>
+                {/* <p className="intro-mini ">Here are some of the selected projects that showcase my passion for <br/> front-end development.</p> */}
             </div>
             <div>
                 <ProjectCard

@@ -14,6 +14,7 @@ import cryptous from '../../assets/cryptous-new.png'
 import dashboard from '../../assets/dashboard.png'
 import tasktracker from '../../assets/task-tracker.png'
 import { ContactForm } from "../../Components/Contact/contactPage"
+import arrow from "../../assets/arrow.png"
 
 export const HomePage = () => {
     return(
@@ -80,6 +81,10 @@ export const HomePage = () => {
                     projectlink = 'https://dashboardd-kit.vercel.app/'
                     githublink = 'https://github.com/jummie-jk/Dashboard'
                 />
+                <div className="flex underline">
+                    <a href="/all-projects">View all projects</a>
+                    <img src={arrow} alt="" />
+                </div>
             </div>
            </section>
            {/* About Section */}
@@ -106,7 +111,7 @@ export const HomePage = () => {
                 <div className="contact-div">
                     <div>
                       <p className="header-text">Let's Connect</p>
-                      <p className="intro-mini">Say hello at <span>jumokeipoola2019@gmail.com</span></p>
+                      <p className="intro-mini pb-1">Say hello at <span>jumokeipoola2019@gmail.com</span></p>
                       <p className="intro-mini">For more information, here is my <span>resume</span></p>
                       <div className="socials">
                       <a href="https://www.linkedin.com/in/olajumokeipoola/" target="_blank">  <img src={linkedlnn} alt="icon" className="social-icon"/></a>

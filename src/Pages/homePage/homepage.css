@@ -159,7 +159,7 @@
     }
     .about-section{
         display: flex;
-        height: 80vh;
+        height: 50vh;
         flex-wrap: wrap;
     }
     .grid-item{
@@ -169,16 +169,16 @@
 @media screen and (max-width: 700px) {
     .about-section{
         display: flex;
-        height: 80vh;
+        height: 60vh;
         flex-wrap: wrap;
     }
     .grid-item{
-        flex-basis: 100%;
+        flex-grow: 1; 
+        margin: 0;
+        flex-basis: content;
     }
     .about-text{
         font-size: 18px;
-        font: 400;
-        font-family: "Manrope", sans-serif;
         padding-bottom: 1rem;
     }
     .contact-div{

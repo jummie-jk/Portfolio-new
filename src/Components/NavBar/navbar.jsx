@@ -1,5 +1,5 @@
 import React from "react";
-import { useState } from "react";
+import { useState, useEffect} from "react";
 import { Link } from "react-router-dom"
 import styled from 'styled-components';
 import logo from '../../assets/logonew.png'
@@ -28,6 +28,9 @@ const NavItem = styled.li`
       color: #D3E97A;
     }
   }
+  @media (min-width: 768px) {
+    margin: 1rem 1rem;
+  }
 `;
 
 const MobileNavToggle = styled.button`
@@ -35,7 +38,7 @@ const MobileNavToggle = styled.button`
   background-color: transparent;
   border: none;
   color: #fff;
-  font-size: 1.5rem;
+  font-size: 1rem;
   cursor: pointer;
   transition: all 0.3s ease;
 
@@ -57,18 +60,64 @@ const DesktopNav = styled.ul`
   }
 `;
 
+// const MobileNav = styled.ul`
+//   display: none;
+//   flex-direction: column;
+//   margin: 0;
+//   padding: 0;
+
+//   @media (max-width: 767px) {
+//     display: flex;
+//   }
+// `;
 const MobileNav = styled.ul`
+  position: absolute;
+  top: 10%; 
+  left: 0;
   display: none;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   margin: 0;
   padding: 0;
+  background-color: #000; 
+  width: 100%; 
+  z-index: 1000;
 
   @media (max-width: 767px) {
-    display: flex;
+    display: ${({ isOpen }) => (isOpen ? 'flex' : 'none')};
   }
+`;
+const NavOverlay = styled.div`
+  position: fixed;
+  top: 10%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(8px); 
+  z-index: 999;
+  pointer-events: ${({ isOpen }) => (isOpen ? 'auto' : 'none')};
+  opacity: ${({ isOpen }) => (isOpen ? '1' : '0')}; 
+  transition: opacity 0.3s ease; 
 `;
 export const NavBar = () => {
     const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
+  //   useEffect(() => {
+  //     const body = document.querySelector('body');
+
+  //     if (isMobileNavOpen) {
+  //         body.style.overflow = 'hidden'; 
+  //     } else {
+  //         body.style.overflow = 'auto'; 
+  //     }
+
+  //     return () => {
+  //         body.style.overflow = 'auto'; 
+  //     };
+  // }, [isMobileNavOpen]);
+
 
     return(
         <div className="navbar-main">
@@ -83,13 +132,15 @@ export const NavBar = () => {
                     <NavItem><a href="/about">About</a></NavItem>
                     <NavItem><a href="/contact">Contact</a></NavItem>
                 </DesktopNav>
-                <MobileNav style={{ display: isMobileNavOpen ? 'flex' : 'none' }}>
-                    <NavItem><a href="/">Home</a></NavItem>
-                    <NavItem><a href="/">About</a></NavItem>
-                    <NavItem><a href="/">Services</a></NavItem>
-                    <NavItem><a href="/">Contact</a></NavItem>
+                
+                <MobileNav isOpen={isMobileNavOpen}>
+                  <NavItem><a href="/">Home</a></NavItem>
+                  <NavItem><a href="/all-projects">Projects</a></NavItem>
+                  <NavItem><a href="/about">About</a></NavItem>
+                  <NavItem><a href="/contact">Contact</a></NavItem>
                 </MobileNav>
          </Nav>
+         <NavOverlay isOpen={isMobileNavOpen} onClick={() => setIsMobileNavOpen(false)} />
         </div>
     )
 }

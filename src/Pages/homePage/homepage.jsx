@@ -59,7 +59,7 @@ export const HomePage = () => {
                     year = "2023"
                     stacks = 'React, CSS, Vercel, Coingecko API, Git & Github'
                     projectlink = 'https://taskss-tracker.vercel.app/'
-                    githublink = 'https://github.com/jummie-jk/Crypto-website'
+                    githublink = 'https://github.com/jummie-jk/Task-tracker'
                 />
                  <ProjectCard
                     imageurl = ""
@@ -68,7 +68,7 @@ export const HomePage = () => {
                     year = "2024"
                     stacks = 'React, CSS, Vercel, Coingecko API, Git & Github'
                     projectlink = 'https://dashboardd-kit.vercel.app/'
-                    githublink = 'https://github.com/jummie-jk/Crypto-website'
+                    githublink = 'https://github.com/jummie-jk/Dashboard'
                 />
             </div>
            </section>

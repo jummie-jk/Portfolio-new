@@ -28,13 +28,13 @@ export const ProjectCard = (props) => {
                     </div>
                     <div className="flex">
                         <div className="underline">
-                        <a href={props.projectlink}><div className="flex div-link">
+                        <a href={props.projectlink} target="_blank"><div className="flex div-link">
                              <p>Live Demo</p>
                               <img src={arrow} alt="" />
                             </div></a>
                         </div>
                         <div className="underline">
-                        <a href={props.githublink}>
+                        <a href={props.githublink} target="_blank">
                         <div className="flex div-link pad-left">
                              <p>See on github</p>
                               <img src={github} alt="" />

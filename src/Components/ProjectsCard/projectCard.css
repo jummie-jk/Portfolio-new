@@ -5,13 +5,13 @@
     align-items: center;
 }
 .image-div{
-    width: 600px;
-    height: 600px;
+    width: 35rem;
+    height: 35rem;
     background-color: #1A1A1A;
 }
 .text-div{
-    width: 600px;
-    height: 600px;
+    width: 35rem;
+    height: 35rem;
     margin-top: 7rem;
 }
 .flex{

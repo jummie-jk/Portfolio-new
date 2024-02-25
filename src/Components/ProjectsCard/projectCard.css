@@ -5,9 +5,16 @@
     align-items: center;
 }
 .image-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 35rem;
     height: 35rem;
     background-color: #1A1A1A;
+}
+.project-image{
+    width: 30rem;
+    height: auto;
 }
 .text-div{
     width: 35rem;

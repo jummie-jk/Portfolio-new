@@ -6,6 +6,9 @@ import github from "../../assets/github.png"
 import { Link } from "react-router-dom"
 import './homepage.css'
 import { ProjectCard } from "../../Components/ProjectsCard/projectsCard"
+import cryptous from '../../assets/cryptous-new.png'
+import dashboard from '../../assets/dashboard.png'
+import tasktracker from '../../assets/task-tracker.png'
 
 export const HomePage = () => {
     return(
@@ -44,8 +47,8 @@ export const HomePage = () => {
             </div>
             <div>
                 <ProjectCard
-                    imageurl = ""
-                    projectTitle = "Cryptous"
+                    imageurl ={cryptous}
+                    projectTitle = 'Cryptous'
                     projectDescription = 'Cryptous is a website that provides an up-to-date daily coin information sourced from a reliable APIs also offering a glimpse into the latest trends, market data, and price 7 most search coins,'
                     year = "2023"
                     stacks = 'React, CSS, Vercel, Coingecko API, Git & Github'
@@ -53,7 +56,7 @@ export const HomePage = () => {
                     githublink = 'https://github.com/jummie-jk/Crypto-website'
                 />
                  <ProjectCard
-                    imageurl = ""
+                    imageurl = {tasktracker}
                     projectTitle = "Task Tracker"
                     projectDescription = 'Cryptous is a website that provides an up-to-date daily coin information sourced from a reliable APIs also offering a glimpse into the latest trends, market data, and price 7 most search coins,'
                     year = "2023"
@@ -62,7 +65,7 @@ export const HomePage = () => {
                     githublink = 'https://github.com/jummie-jk/Task-tracker'
                 />
                  <ProjectCard
-                    imageurl = ""
+                    imageurl = {dashboard}
                     projectTitle = "Dashboard"
                     projectDescription = 'Cryptous is a website that provides an up-to-date daily coin information sourced from a reliable APIs also offering a glimpse into the latest trends, market data, and price 7 most search coins,'
                     year = "2024"

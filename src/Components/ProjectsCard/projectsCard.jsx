@@ -7,7 +7,7 @@ export const ProjectCard = (props) => {
     return(
         <div className="all-cards">
             <div className="card">
-                <div className="image-div"><img src={props.imageurl} alt="products" />
+                <div className="image-div"><img className="project-image" src={props.imageurl} alt="products" />
                 </div>
                 <div className="text-div">
                     <div>

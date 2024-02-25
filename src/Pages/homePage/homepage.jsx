@@ -76,12 +76,18 @@ export const HomePage = () => {
             </div>
            </section>
            <hr className="rule"/>
-           <section className="section">
-                <div>
+           <section className="section about-section">
+                <div className="grid-item">
                     <p className="header-text">About me</p>
                 </div>
-                <div>
-                    <p></p>
+                <div className="grid-item">
+                    <p className="about-text">I'm a passionate and creative Frontend Developer with a strong desire to bring ideas to life through web development. </p>
+                    <p className="intro-mini">
+                    With a love for clean and elegant design, I thrive on turning complex problems into beautiful and user-friendly interfaces.
+
+                    I believe that effective communication and collaboration are the keys to successful project development. I'm always excited to work alongside clients, designers, and other developers to transform ideas into reality.
+                    </p>
+                    <p className="link underlinee"><a href="/about" className="underline">More about me</a></p>
                 </div>
            </section>
         </div>

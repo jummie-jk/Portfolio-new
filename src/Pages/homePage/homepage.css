@@ -71,6 +71,29 @@
     font-family: "Bebas Neue", sans-serif;
     text-transform: uppercase;
 }
+.about-section{
+    display: flex;
+    height: 80vh;
+}
+.grid-item{
+    flex-basis: 100%;
+}
+.about-text{
+    font-size: 20px;
+    font: 400;
+    font-family: "Manrope", sans-serif;
+    padding-bottom: 1rem;
+}
+.link a{
+    color: #D3E97A;
+    font-size: 16px;
+    font-family: "Manrope", sans-serif;
+    display:  inline-block;
+    margin-top: 1rem;
+}
+.underline{
+    border-bottom: 1px solid #D3E97A;
+}
 
 
 @media screen and (min-width: 500px) {
@@ -141,6 +164,9 @@
         height: 45px;
         /* padding: 10px 20px; */
        
+    }
+    .header-text{
+        font-size: 40px;
     }
     
 }

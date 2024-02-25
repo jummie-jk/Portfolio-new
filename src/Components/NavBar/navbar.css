@@ -10,6 +10,13 @@
 .navbar-main a {
     font-size: 16px;
 }
+@media screen and (max-width: 700px) {
+ 
+  .NavLogo{
+    margin-top: 1.5rem;
+}
+  
+}
 /* .header {
     position: fixed;
     width: 100%;

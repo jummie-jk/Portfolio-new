@@ -28,9 +28,7 @@ const NavItem = styled.li`
       color: #D3E97A;
     }
   }
-  @media (min-width: 768px) {
-    margin: 1rem 1rem;
-  }
+ 
 `;
 
 const MobileNavToggle = styled.button`
@@ -38,7 +36,7 @@ const MobileNavToggle = styled.button`
   background-color: transparent;
   border: none;
   color: #fff;
-  font-size: 1rem;
+  font-size: 1.5rem;
   cursor: pointer;
   transition: all 0.3s ease;
 
@@ -72,7 +70,7 @@ const DesktopNav = styled.ul`
 // `;
 const MobileNav = styled.ul`
   position: absolute;
-  top: 10%; 
+  top: 12%; 
   left: 0;
   display: none;
   flex-direction: column;
@@ -81,8 +79,9 @@ const MobileNav = styled.ul`
   text-align: center;
   margin: 0;
   padding: 0;
-  background-color: #000; 
-  width: 100%; 
+  background-color: rgba(0, 0, 0, 0.5); 
+  width: 100%;
+  height: 100vh; 
   z-index: 1000;
 
   @media (max-width: 767px) {
@@ -91,7 +90,7 @@ const MobileNav = styled.ul`
 `;
 const NavOverlay = styled.div`
   position: fixed;
-  top: 10%;
+  top: 12%;
   left: 0;
   width: 100%;
   height: 100%;
@@ -104,19 +103,19 @@ const NavOverlay = styled.div`
 `;
 export const NavBar = () => {
     const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
-  //   useEffect(() => {
-  //     const body = document.querySelector('body');
+    useEffect(() => {
+      const body = document.querySelector('body');
 
-  //     if (isMobileNavOpen) {
-  //         body.style.overflow = 'hidden'; 
-  //     } else {
-  //         body.style.overflow = 'auto'; 
-  //     }
+      if (isMobileNavOpen) {
+          body.style.overflow = 'hidden'; 
+      } else {
+          body.style.overflow = 'auto'; 
+      }
 
-  //     return () => {
-  //         body.style.overflow = 'auto'; 
-  //     };
-  // }, [isMobileNavOpen]);
+      return () => {
+          body.style.overflow = 'auto'; 
+      };
+  }, [isMobileNavOpen]);
 
 
     return(

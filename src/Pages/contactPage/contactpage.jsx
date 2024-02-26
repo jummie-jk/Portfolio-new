@@ -27,9 +27,7 @@ export const ContactPage = () => {
                       </div>
                     </div>
                     <div>
-                        <form action="">
                             <ContactForm/>
-                        </form>
                     </div>
                 </div>
            </section>

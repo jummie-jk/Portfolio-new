@@ -5,9 +5,121 @@
 .grid-item{
     flex-basis: 100%;
 }
-@media screen and (max-width: 700px) {
-    .about-section{
+.about-button{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 197px;
+    height: 54px;
+    /* padding: 10px 20px; */
+    background-color: #D3E97A; 
+    color: #000; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: "Manrope", sans-serif;
+    transition: background-color 0.3s;
+    border-radius: 100px;
+}
+.large-image-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7rem;
+}
+.large-image{
+    width: 80%;
+    height: auto;
+    -webkit-filter: grayscale(100%); 
+    filter: grayscale(100%);
+    border-radius: 2rem;
+}
+.capabilities-section{
+    display: flex;
+    flex-wrap: nowrap;
+    font-family: "Manrope", sans-serif;
+}
+.experience{
+    border: 1px solid #484848;
+    border-radius: 100px;
+    padding: 1rem 2rem;
+    background-color: #000;
+    color: #fff;
+    margin:  0 0.5rem;
+}
+
+
+
+.experience-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+#company{
+    color: #D3E97A;
+    font-size: 16px;
+    padding-bottom: 1rem;
+    
+}
+.flex-btw-about{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 2rem ;
+}
+.flex-btw-about .role{
+    font-size: 24px;
+}
+.flex-btw-about .time{
+    font-size: 18px;
+    padding-top: -1rem;
+    color: #C7C7C7;
+}
+.doings{
+    color: #C7C7C7;
+}
+.top-pad{
+    padding-top: 1rem;
+}
+@media screen and (max-width: 900px) {
+    .capabilities-section{
         display: flex;
         flex-wrap: wrap;
+    }
+}
+@media screen and (max-width: 700px) {
+    .about-sectionn{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .experience{
+        padding: 0.7rem 1rem;
+        margin:  0 0.2rem;
+    }
+    .pad-top{
+        padding-top: 1rem;
+    }
+    .large-image{
+        width: 100%;
+    
+    }
+    .flex-btw-about .role{
+        font-size: 17px;
+    }
+    .flex-btw-about .time{
+        font-size: 15px;
+        
+       
+    }
+    .flex-btw-about{
+        margin-top: 3rem ;
+    }
+    #company{
+        color: #D3E97A;
+        font-size: 14px;
+        padding-bottom: 1rem;
+        
     }
 }

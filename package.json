@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@emailjs/browser": "^4.1.0",
     "@react-email/components": "0.0.15",
     "@react-email/link": "0.0.7",
     "@testing-library/jest-dom": "^5.17.0",

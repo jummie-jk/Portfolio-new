@@ -139,9 +139,7 @@ export const HomePage = () => {
                       </div>
                     </div>
                     <div>
-                        <form action="">
                             <ContactForm/>
-                        </form>
                     </div>
                 </div>
            </section>

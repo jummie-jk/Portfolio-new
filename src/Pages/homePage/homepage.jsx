@@ -15,8 +15,18 @@ import dashboard from '../../assets/dashboard.png'
 import tasktracker from '../../assets/task-tracker.png'
 import { ContactForm } from "../../Components/Contact/contactPage"
 import arrow from "../../assets/arrow.png"
+import resume from '../../assets/resume.pdf'
 
 export const HomePage = () => {
+    const  onDownload = () => {
+        const pdfUrl = resume;
+        const link = document.createElement("a");
+        link.href = pdfUrl;
+        link.download = "resume.pdf"; 
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    };
     return(
         <div>
 
@@ -57,7 +67,7 @@ export const HomePage = () => {
                 <ProjectCard
                     imageurl ={cryptous}
                     projectTitle = 'Cryptous'
-                    projectDescription = 'Cryptous is a website that provides an up-to-date daily coin information sourced from a reliable APIs also offering a glimpse into the latest trends, market data, and price 7 most search coins,'
+                    projectDescription = 'Cryptous is a website that provides an up-to-date daily coin information sourced from coingecko API.'
                     year = "2023"
                     stacks = ' React, CSS, Vercel, Coingecko API, Git & Github'
                     projectlink = 'https://crypto-website-six.vercel.app/'
@@ -66,7 +76,7 @@ export const HomePage = () => {
                  <ProjectCard
                     imageurl = {tasktracker}
                     projectTitle = "Task Tracker"
-                    projectDescription = 'Cryptous is a website that provides an up-to-date daily coin information sourced from a reliable APIs also offering a glimpse into the latest trends, market data, and price 7 most search coins,'
+                    projectDescription = 'Task Tracker is a website that helps you get control of your day by taking a list of all your tasks for the day and adding priority level to each task.'
                     year = "2023"
                     stacks = ' React, CSS, Vercel, Git & Github'
                     projectlink = 'https://taskss-tracker.vercel.app/'
@@ -75,13 +85,13 @@ export const HomePage = () => {
                  <ProjectCard
                     imageurl = {dashboard}
                     projectTitle = "Dashboard"
-                    projectDescription = 'Cryptous is a website that provides an up-to-date daily coin information sourced from a reliable APIs also offering a glimpse into the latest trends, market data, and price 7 most search coins,'
+                    projectDescription = 'Dashboard makes data easy and help users gain real-time insights and customization options for better decision-making.'
                     year = "2024"
-                    stacks = ' React, SASS/SCSS, Vercel, Git & Github'
+                    stacks = ' React, SASS/SCSS, Recharts, Material-UI, Vercel, Git & Github'
                     projectlink = 'https://dashboardd-kit.vercel.app/'
                     githublink = 'https://github.com/jummie-jk/Dashboard'
                 />
-                <div className="flex underline">
+                <div className="flex underline view-all">
                     <a href="/all-projects">View all projects</a>
                     <img src={arrow} alt="" />
                 </div>
@@ -101,7 +111,10 @@ export const HomePage = () => {
 
                     I believe that effective communication and collaboration are the keys to successful project development. I'm always excited to work alongside clients, designers, and other developers to transform ideas into reality.
                     </p>
-                    <p className="link underlinee"><a href="/about" className="underline">More about me</a></p>
+                    <div className="flex underlinee more-text">
+                    <p className=""><a href="/about" className="">More about me</a></p>
+                    <img src={arrow} alt="" />
+                    </div>
                 </div>
              </div> 
            </section>
@@ -111,8 +124,8 @@ export const HomePage = () => {
                 <div className="contact-div">
                     <div>
                       <p className="header-text">Let's Connect</p>
-                      <p className="intro-mini pb-1">Say hello at <span>jumokeipoola2019@gmail.com</span></p>
-                      <p className="intro-mini">For more information, here is my <span>resume</span></p>
+                      <p className="intro-mini pb-1">Say hello at <a href="mailto:jumokeipoola2019@gmail.com"><span>jumokeipoola2019@gmail.com</span></a></p>
+                      <p className="intro-mini">For more information, here is my <span onClick={onDownload}>resume</span></p>
                       <div className="socials">
                       <a href="https://www.linkedin.com/in/olajumokeipoola/" target="_blank">  <img src={linkedlnn} alt="icon" className="social-icon"/></a>
                       <a href="https://github.com/jummie-jk"><img src={githubb} alt="icon" className="social-icon"/></a>

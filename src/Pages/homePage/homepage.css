@@ -106,6 +106,7 @@
 .intro-mini span{
     color: #D3E97A;
     border-bottom: 1px solid #D3E97A;
+    cursor: pointer;
 }
 .social-icon{
     width: 32px;
@@ -115,6 +116,9 @@
 }
 .pb-1{
     padding-bottom: 1rem;
+}
+.more-text{
+    margin-top: 1.5rem;
 }
 
 
@@ -187,6 +191,9 @@
         justify-content: center;
         align-items: center;
     }
+    .view-all{
+        margin-top: 1rem;
+    }
 }
 @media screen and (max-width: 500px) {
     .section{
@@ -213,7 +220,7 @@
     }
     .contact-button {
         width: 150px;
-        height: 45px;
+        height: 50px;
         /* padding: 10px 20px; */
        
     }

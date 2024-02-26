@@ -28,7 +28,9 @@ const NavItem = styled.li`
       color: #D3E97A;
     }
   }
- 
+  @media (max-width: 768px) {
+    margin: 1rem 0rem;
+  }
 `;
 
 const MobileNavToggle = styled.button`
@@ -74,8 +76,8 @@ const MobileNav = styled.ul`
   left: 0;
   display: none;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  // justify-content: center;
+  // align-items: center;
   text-align: center;
   margin: 0;
   padding: 0;

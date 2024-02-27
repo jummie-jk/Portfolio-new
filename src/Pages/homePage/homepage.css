@@ -169,6 +169,9 @@
     .grid-item{
         flex-basis: 100%;
     }
+    .header-text{
+        font-size: 52px;
+    }
 }
 @media screen and (max-width: 700px) {
     .about-section{
@@ -193,6 +196,14 @@
     }
     .view-all{
         margin-top: 1rem;
+    }
+    .header-text{
+        font-size: 45px;
+    }
+    .intro-mini{
+        font-size: 17px;
+        line-height: 28px;
+        
     }
 }
 @media screen and (max-width: 500px) {

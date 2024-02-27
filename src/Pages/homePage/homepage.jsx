@@ -16,6 +16,7 @@ import tasktracker from '../../assets/task-tracker.png'
 import { ContactForm } from "../../Components/Contact/contactPage"
 import arrow from "../../assets/arrow.png"
 import resume from '../../assets/resume.pdf'
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 export const HomePage = () => {
     const  onDownload = () => {
@@ -52,7 +53,10 @@ export const HomePage = () => {
                     </div>
                 </div>
                 <div>
-                    <img src={image} alt="" className="my-image"/>
+                <LazyLoadImage src={image} className="my-image"
+                            alt="Image Alt"
+                        />
+                    {/* <img src={image} alt="" className="my-image" loading="lazy"/> */}
                 </div>
              </div>
            </section>

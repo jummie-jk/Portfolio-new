@@ -131,7 +131,9 @@ export const HomePage = () => {
                       <p className="intro-mini pb-1">Say hello at <a href="mailto:jumokeipoola2019@gmail.com"><span>jumokeipoola2019@gmail.com</span></a></p>
                       <p className="intro-mini">For more information, here is my <span onClick={onDownload}>resume</span></p>
                       <div className="socials">
+                        
                       <a href="https://www.linkedin.com/in/olajumokeipoola/" target="_blank">  <img src={linkedlnn} alt="icon" className="social-icon"/></a>
+
                       <a href="https://github.com/jummie-jk"><img src={githubb} alt="icon" className="social-icon"/></a>
                       <a href="https://twitter.com/Jummie_jk" target="_blank">
                       <img src={twitterr} alt="icon" className="social-icon"/>

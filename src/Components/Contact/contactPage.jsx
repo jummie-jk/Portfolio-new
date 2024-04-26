@@ -44,7 +44,7 @@ export const ContactForm = () => {
             <form onSubmit={sendEmail}>
                 <div>
                     <label>Name</label>
-                    <input type="text" name="user_name"  placeholder="Name" className='input-field' />
+                    <input required type="text" name="user_name"  placeholder="Name" className='input-field' />
                 </div>
                 <div>
                     <label>Email</label>

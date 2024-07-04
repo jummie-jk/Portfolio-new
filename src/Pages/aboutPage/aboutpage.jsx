@@ -4,7 +4,7 @@ import github from "../../assets/github.png"
 import { Link } from "react-router-dom"
 import './aboutpage.css'
 import resume from '../../assets/resume.pdf'
-import profileimage2 from '../../assets/my-image-2.jpg'
+import profileimage2 from '../../assets/Jummie5.jpeg'
 import { ContactPage } from '../contactPage/contactpage'
 
 export const AboutPage = () => {

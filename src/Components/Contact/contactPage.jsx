@@ -48,11 +48,11 @@ export const ContactForm = () => {
                 </div>
                 <div>
                     <label>Email</label>
-                    <input type="email" name="user_email" placeholder="Email" className='input-field'/>
+                    <input required type="email" name="user_email" placeholder="Email" className='input-field'/>
                 </div>
                 <div>
                     <label>Message</label>
-                    <textarea rows="6" cols="50" placeholder="Please enter your message" name="message" className='input-field'/>
+                    <textarea required rows="6" cols="50" placeholder="Please enter your message" name="message" className='input-field'/>
                 </div>
                 <div>
                     <input className='contact-footer-button ' type="submit" value="Send" disabled={isSubmitting} />

@@ -93,8 +93,20 @@ export const AboutPage = () => {
              <div  className="grid-item">
              <div>
                     <div className='flex-btw-about'>
+                        <div>
+                         <p className='role'>Software Developer - Angular</p>
+                         <p id='company'>Primed EHealth</p>
+                        </div>
+                        <p className='time'>Apr 2024 - Jun 2024 (Contract)</p>
+                    </div>
+                    <p className='doings'>Worked collaboratively with cross-functional teams to integrate frontend components into larger systems and projects.
+                    </p>
+                    
+                </div>
+             <div>
+                    <div className='flex-btw-about'>
                         <div className=''>
-                         <p className='role'>Frontend Developer Intern - Angular</p>
+                         <p className='role'>Frontend Developer - Angular</p>
                          <p id='company'>Nigeria Development Foundation- NDF</p>
                         </div>
                         <p className='time'>Sep 2023 - Present</p>

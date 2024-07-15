@@ -13,6 +13,7 @@ import { ProjectCard } from "../../Components/ProjectsCard/projectsCard"
 import cryptous from '../../assets/cryptous-new.png'
 import dashboard from '../../assets/dashboard.png'
 import tasktracker from '../../assets/task-tracker.png'
+import coffee from '../../assets/coffee.png'
 import { ContactForm } from "../../Components/Contact/contactPage"
 import arrow from "../../assets/arrow.png"
 import resume from '../../assets/resume.pdf'
@@ -68,6 +69,16 @@ export const HomePage = () => {
                 <p className="intro-mini ">Here are some of the selected projects that showcase my passion for <br/> front-end development.</p>
             </div>
             <div>
+
+                 <ProjectCard
+                    imageurl ={coffee}
+                    projectTitle = 'BeanScene Coffee'
+                    projectDescription = 'BeanScene Coffee is a mini ecommerce website with real time database where users can perform basic CRUD and pay for a coffee'
+                    year = "2024"
+                    stacks = 'Angular, NodeJs, SCSS, Vercel, Paystack, Render, Git & Github'
+                    projectlink = 'https://beanscene-coffeeshop.vercel.app/home'
+                    githublink = 'https://github.com/jummie-jk/Coffee-shop.git'
+                />
                 <ProjectCard
                     imageurl ={cryptous}
                     projectTitle = 'Cryptous'

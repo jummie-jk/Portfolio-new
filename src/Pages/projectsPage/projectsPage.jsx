@@ -18,6 +18,15 @@ export const ProjectsPage = () => {
             </div>
             <div>
             <ProjectCard
+                    imageurl ={coffee}
+                    projectTitle = 'BeanScene Coffee'
+                    projectDescription = 'BeanScene Coffee is a mini ecommerce website with real time database where users can perform basic CRUD and pay for a coffee'
+                    year = "2024"
+                    stacks = 'Angular, NodeJs, SCSS, Vercel, Paystack, Render, Git & Github'
+                    projectlink = 'https://beanscene-coffeeshop.vercel.app/home'
+                    githublink = 'https://github.com/jummie-jk/Coffee-shop.git'
+                />
+            <ProjectCard
                     imageurl ={sandg}
                     projectTitle = 'Samson and Gretel'
                     projectDescription = 'Samson and Gretel is your trusted legal partner, providing top-tier legal services with a commitment to integrity and excellence.'

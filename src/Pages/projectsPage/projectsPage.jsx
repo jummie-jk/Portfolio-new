@@ -5,6 +5,7 @@ import tasktracker from '../../assets/task-tracker.png'
 import portfolio from '../../assets/portfolio.png'
 import herlign from '../../assets/herlign.png'
 import sandg from '../../assets/samson-and-gretel.png'
+import coffee from '../../assets/coffee.png'
 
 export const ProjectsPage = () => {
     return(
